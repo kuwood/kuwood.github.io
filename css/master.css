@@ -150,4 +150,5 @@ textarea {
 .btn:hover {
   background: #E41E23;
   text-decoration: none;
+  cursor: pointer;
 }
