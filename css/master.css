@@ -50,7 +50,6 @@ section {
 #nav-list a:hover {
   padding-bottom: 3px;
   border-bottom: 3px solid #F4494F;
-  cursor: pointer;
 }
 
 #social {
@@ -88,6 +87,10 @@ p {
 a {
   color: #011627;
   font-family: 'Quattrocento', serif;
+}
+
+a:hover {
+  cursor: pointer;
 }
 
 .content-wrap {
