@@ -2,19 +2,19 @@ function showDefine() {
   $('.main-content .content-wrap').children().hide();
   $('.define').fadeIn();
   $('#0').css({'font-size':'1.4em'})
-  $('.main-content').css({"margin-left":"5%"})
+  $('.main-content').css({"padding-left":"5%"})
 }
 
 function showProjects() {
   $('.main-content .content-wrap').children().hide();
   $('.project').fadeIn();
-  $('.main-content').css({"margin-left":"5%"})
+  $('.main-content').css({"padding-left":"5%"})
 }
 
 function showContact() {
   $('.main-content .content-wrap').children().hide();
   $('.contact').fadeIn();
-  $('.main-content').css({"margin-left":"0"})
+  $('.main-content').css({"padding-left":"0"})
 }
 
 function createNav() {
