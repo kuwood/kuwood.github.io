@@ -3,18 +3,21 @@ function showDefine() {
   $('.define').fadeIn();
   $('#0').css({'font-size':'1.4em'})
   $('.main-content').css({"padding-left":"5%"})
+  $('.main-content').css({"width":"60%"})
 }
 
 function showProjects() {
   $('.main-content .content-wrap').children().hide();
   $('.project').fadeIn();
   $('.main-content').css({"padding-left":"5%"})
+  $('.main-content').css({"width":"70%"})
 }
 
 function showContact() {
   $('.main-content .content-wrap').children().hide();
   $('.contact').fadeIn();
   $('.main-content').css({"padding-left":"0"})
+  $('.main-content').css({"width":"50%"})
 }
 
 function createNav() {
