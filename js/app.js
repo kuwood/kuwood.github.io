@@ -61,10 +61,10 @@ function navRouter(i) {
 }
 
 function sendMail() {
-  var link = "mailto:keithunderwood510@gmail.com" +
-               "&subject=" + $('#name-text' + " ").val() +
-               $('#subject-text').val() +
-               "&body=" + $('#body-text').val();
+  var link = "mailto:keithunderwood510@gmail.com?" +
+               "subject=" + $('#name-text').val() + " - " +
+               $('#subject-text').val().toString() +
+               "&body=" + $('#body-text').val().toString();
   window.location.href = link;
 }
 
