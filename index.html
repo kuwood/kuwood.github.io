@@ -2,10 +2,12 @@
 <html>
   <head>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.min.css" media="screen" title="no title" charset="utf-8">
-    <link href='https://fonts.googleapis.com/css?family=Fanwood+Text' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Quattrocento' rel='stylesheet' type='text/css'>
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Fanwood+Text' type='text/css'>
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Quattrocento' type='text/css'>
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css" type="text/css"/>
+    <link rel="stylesheet" href="slick/slick-theme.css" type="text/css">
     <link rel="stylesheet" href="css/master.css" media="screen" title="no title" charset="utf-8">
-    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <meta charset="utf-8">
     <title>Keith Underwood</title>
   </head>
@@ -15,7 +17,7 @@
       </header>
       <section>
         <div id="nav">
-          <div class="content-wrap">
+          <div id="nav-wrap">
             <ul id="nav-list">
             </ul>
           </div>
@@ -23,10 +25,22 @@
         <div class="main-content">
           <div class="content-wrap">
             <p class="define">I am <strong>Web Developer</strong> who is interested in technology, music, sports, games, outdoors, beer and discovering new things. I pride myself in <strong>self discipline</strong> and my thirst for <strong>efficiency</strong>. I also love <strong>sharing experiences</strong>, laughs, and smiles.</p>
-            <div id="project-1" class="project"></div>
-            <div id="project-2" class="project"></div>
-            <div id="project-3" class="project"></div>
-            <div id="project-4" class="project"></div>
+            <div class="carousel">
+                <div class="slides">
+                    <div id="project-1" class="project">
+                        <img src="img/peepin_twitch.png" alt="peepin_twitch" />
+                    </div>
+                    <div id="project-2" class="project">
+                        <img src="img/quick_list.png" alt="quick_list.png" />
+                    </div>
+                    <div id="project-3" class="project">
+                        <img src="img/contactapp.png" alt="contactapp.png" />
+                    </div>
+                    <div id="project-4" class="project">
+                        <img src="img/thetube.png" alt="thetube.png" />
+                    </div>
+                </div>
+            </div>
             <form class="contact">
               <input id="name-text" type="text" name="name" value="" placeholder="Full name">
               <input id="subject-text" type="text" name="name" value="" placeholder="Subject">
@@ -45,6 +59,7 @@
       </footer>
     </div>
     <script src="//code.jquery.com/jquery.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
     <script src="js/app.js"></script>
   </body>
 </html>

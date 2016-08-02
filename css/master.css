@@ -93,49 +93,36 @@ a:hover {
   cursor: pointer;
 }
 
-.content-wrap {
+.content-wrap, #nav-wrap {
   display: table;
   width: 100%;
   height: 100%;
 }
 
+.carousel {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.slides {
+    width: 74%;
+    align-self: center;
+}
+
 .project {
-  display: inline-block;
-  width: 49%;
-  height: 49%;
-  vertical-align: middle;
+    width: 49%;
 }
 
-#project-1 {
-  background-image: url(/img/peepin_twitch.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  border-left: 1px solid #e7e7e7;
-  border-top: 1px solid #e7e7e7;
+.project img {
+    width: 100%;
 }
 
-#project-2 {
-  background-image: url(/img/quick_list.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  border-top: 1px solid #e7e7e7;
-  border-right: 1px solid #e7e7e7;
-}
-
-#project-3 {
-  background-image: url(/img/contactapp.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  border-left: 1px solid #e7e7e7;
-  border-bottom: 1px solid #e7e7e7;
-}
-
-#project-4 {
-  background-image: url(/img/thetube.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  border-bottom: 1px solid #e7e7e7;
-  border-right: 1px solid #e7e7e7;
+.slick-prev:before, .slick-next:before {
+    color:#011627 !important;
 }
 
 .contact {
