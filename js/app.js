@@ -28,7 +28,7 @@ function createNav() {
   content.forEach(function(i) {
     var liItem = $("<li><a id='"+content.indexOf(i) +
                     "' class='nav-link'>"+i+"</a></li>");
-    $('#nav-list').append(liItem);
+    $('.nav-list').append(liItem);
     liItem.click(function() {
       navRouter(liItem);
   });
