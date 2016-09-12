@@ -133,15 +133,6 @@ a:hover {
   text-align: center;
 }
 
-.contact input {
-  display: block;
-  margin: 5px auto;
-  width: 60%;
-}
-textarea {
-  width: 60%;
-}
-
 .social-links {
   color: #011627;
 }
