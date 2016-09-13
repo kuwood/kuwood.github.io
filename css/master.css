@@ -1,25 +1,25 @@
 * {
-  text-decoration: none;
-  list-style: none;
+    text-decoration: none;
+    list-style: none;
 }
 
 html, body, .wrapper {
-  height: 100%;
-  background-color: #FDFFFC;
+    height: 100%;
+    background-color: #FDFFFC;
 }
 
 ul, li {
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
 }
 
 header {
-  height: 20%;
+    height: 20%;
 }
 
 section {
-  display: flex;
-  height: 60%;
+    display: flex;
+    height: 60%;
 }
 
 footer {
@@ -27,66 +27,66 @@ footer {
     height: 20%;
 }
 
-.nav  {
-  display: flex;
-  height: 100%;
-  flex: 0 0 25%;
-  align-items: center;
-  justify-content: center;
+.nav {
+    display: flex;
+    height: 100%;
+    flex: 0 0 25%;
+    align-items: center;
+    justify-content: center;
 }
 
 .nav-list li {
-  padding: 5%;
-  display: flex;
-  justify-content: center;
+    padding: 5%;
+    display: flex;
+    justify-content: center;
 }
 
 .nav-list a {
-  color: #01213b;
-  padding-bottom: 5px;
-  font-size: 1.2em;
-  line-height: 1.4em;
+    color: #01213b;
+    padding-bottom: 5px;
+    font-size: 1.2em;
+    line-height: 1.4em;
 }
 
 .nav-list a:hover {
-  padding-bottom: 3px;
-  border-bottom: 3px solid #F4494F;
+    padding-bottom: 3px;
+    border-bottom: 3px solid #F4494F;
 }
 
 .social {
-  display: flex;
-  height: 100%;
-  justify-content: center;
+    display: flex;
+    height: 100%;
+    justify-content: center;
 }
 
-.social li{
-  align-self: center;
-  padding: 20px;
+.social li {
+    align-self: center;
+    padding: 20px;
 }
 
 .main-content {
-  box-sizing: border-box;
-  display: flex;
-  padding-left: 5%;
-  flex: 0 0 70%;
-  border-left: 1px solid #01213b;
+    box-sizing: border-box;
+    display: flex;
+    padding-left: 5%;
+    flex: 0 0 70%;
+    border-left: 1px solid #01213b;
 }
 
 p {
-  min-height: 100px;
-  align-self: center;
-  color: #01213b;
-  font-size: 1.2em;
-  font-family: 'Fanwood Text', serif;
+    min-height: 100px;
+    align-self: center;
+    color: #01213b;
+    font-size: 1.2em;
+    font-family: 'Fanwood Text', serif;
 }
 
 a {
-  color: #01213b;
-  font-family: 'Quattrocento', serif;
+    color: #01213b;
+    font-family: 'Quattrocento', serif;
 }
 
 a:hover {
-  cursor: pointer;
+    cursor: pointer;
 }
 
 .nav-wrap {
@@ -94,7 +94,7 @@ a:hover {
 }
 
 .content-wrap {
-  display: flex;
+    display: flex;
 }
 
 .projects-wrap {
@@ -111,40 +111,40 @@ a:hover {
 }
 
 .slick-prev:before, .slick-next:before {
-    color:#01213b !important;
+    color: #01213b !important;
 }
 
 .contact {
-  display: table-cell;
-  vertical-align: middle;
-  height: 100%;
-  width: 50%;
-  text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+    height: 100%;
+    width: 50%;
+    text-align: center;
 }
 
 .social-links {
-  color: #01213b;
+    color: #01213b;
 }
 
 .social-links:hover {
-  color: #F4494F;
+    color: #F4494F;
 }
 
 .btn {
-  -webkit-border-radius: 4;
-  -moz-border-radius: 4;
-  border-radius: 4px;
-  border: 0;
-  color: #FDFFFC;
-  background: #F4494F;
-  padding: 10px 20px 10px 20px;
-  text-decoration: none;
+    -webkit-border-radius: 4;
+    -moz-border-radius: 4;
+    border-radius: 4px;
+    border: 0;
+    color: #FDFFFC;
+    background: #F4494F;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
 }
 
 .btn:hover {
-  background: #E41E23;
-  text-decoration: none;
-  cursor: pointer;
+    background: #E41E23;
+    text-decoration: none;
+    cursor: pointer;
 }
 
 @media all and (max-width: 50em) {
