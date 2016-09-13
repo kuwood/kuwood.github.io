@@ -1,25 +1,14 @@
 function showDefine() {
   $('.main-content .content-wrap').children().hide();
   $('.define').fadeIn();
-  $('.content-wrap').css({"display":"table"});
+  $('.content-wrap').css({"display":"flex"});
   $('#0').css({'font-size':'1.4em'});
-  $('.main-content').css({"padding-left":"5%"});
-  $('.main-content').css({"width":"60%"});
 }
 
 function showProjects() {
   $('.main-content .content-wrap').children().hide();
-  $('.content-wrap').css({"display":"block"});
-  $('.main-content').css({"padding-left":"0"});
-  $('.main-content').css({"width":"50%"});
-  $('.carousel').fadeIn();
-  $('.slides').slick({
-      autoplay: true,
-      autoplaySpeed: 4000,
-      dots: true,
-      fade: true,
-      infinite: true
-    });
+  $('.content-wrap').css({"display":"flex"});
+  $('.projects-wrap').fadeIn();
 }
 
 function createNav() {
