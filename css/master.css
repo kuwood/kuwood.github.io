@@ -107,12 +107,22 @@ a:hover {
     overflow: auto;
 }
 
+.project-title {
+    color: #01213b;
+    text-align: center;
+}
+
 .project img {
     width: 100%;
 }
 
-.slick-prev:before, .slick-next:before {
-    color: #01213b !important;
+.project-links {
+    display: flex;
+}
+
+.project-links a {
+    flex: 1 0 auto;
+    text-align: center;
 }
 
 .contact {
@@ -123,11 +133,11 @@ a:hover {
     text-align: center;
 }
 
-.social-links {
+.red-links {
     color: #01213b;
 }
 
-.social-links:hover {
+.red-links:hover {
     color: #F4494F;
 }
 
