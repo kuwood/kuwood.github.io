@@ -66,5 +66,7 @@ $(function() {
   createNav();
   navAnimation('#0')
   showDefine();
-  $('body').fadeIn().css({'display': 'block'})
+  $('body').fadeIn().css({
+    'display': 'block'
+  })
 });
