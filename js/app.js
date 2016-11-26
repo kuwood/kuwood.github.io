@@ -4,6 +4,9 @@ function showDefine() {
   $('.content-wrap').css({
     "display": "flex"
   });
+  $('.main-content').css({
+    'padding-right': '5%'
+  })
 }
 
 function showProjects() {
@@ -12,6 +15,9 @@ function showProjects() {
     "display": "flex"
   });
   $('.projects-wrap').fadeIn();
+  $('.main-content').css({
+    'padding-right': '0'
+  })
 }
 
 // creates li for each nav item
@@ -60,4 +66,5 @@ $(function() {
   createNav();
   navAnimation('#0')
   showDefine();
+  $('body').fadeIn().css({'display': 'block'})
 });
