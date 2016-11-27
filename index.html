@@ -7,6 +7,8 @@
   <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Quattrocento' type='text/css'>
   <link rel="stylesheet" href="css/master.css" media="screen" title="no title" charset="utf-8">
   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="css/tooltipster.bundle.min.css" />
+  <link rel="stylesheet" type="text/css" href="css/plugins/tooltipster/sideTip/themes/tooltipster-sideTip-light.min.css" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta charset="utf-8">
   <title>Keith Underwood</title>
@@ -25,7 +27,7 @@
       </div>
       <div class="main-content">
         <div class="content-wrap">
-          <p class="define">I am <strong>Web Developer</strong> who is currently looking for work in either the San Francisco Bay Area. My interests include technology, music, sports, games, outdoors, beer and discovering new things. I pride myself in <strong>self-discipline</strong>            and my thirst for <strong>efficiency</strong>. I also love <strong>sharing experiences</strong>, laughs, and smiles. Feel free to contact me using one of the links below.</p>
+          <p class="define">I am <strong class="tooltip" data-tooltip-content="#webdev">Web Developer</strong> who is currently looking for work in either the San Francisco Bay Area. My interests include technology, music, sports, games, outdoors, beer and discovering new things. I pride myself in <strong class="tooltip" data-tooltip-content="#discipline">self-discipline</strong>            and my thirst for <strong class="tooltip" data-tooltip-content="#efficient">efficiency</strong>. I also love <strong class="tooltip" data-tooltip-content="#adventure">sharing experiences</strong>, laughs, and smiles. Feel free to contact me using one of the links below.</p>
           <div class="projects-wrap">
             <div class="projects">
               <div id="project-1" class="project">
@@ -106,7 +108,22 @@
       </ul>
     </footer>
   </div>
+  <div class="tooltip_templates">
+    <span id="webdev">
+        <img class="tooltip-image" src="img/webdev.gif" />
+    </span>
+    <span id="discipline">
+        <img class="tooltip-image" src="img/discipline.gif" />
+    </span>
+    <span id="efficient">
+        <img class="tooltip-image" src="img/efficient.gif" />
+    </span>
+    <span id="adventure">
+        <img class="tooltip-image" src="img/adventure.gif" />
+    </span>
+  </div>
   <script src="//code.jquery.com/jquery.min.js"></script>
+  <script type="text/javascript" src="js/tooltipster.bundle.min.js"></script>
   <script src="js/app.js"></script>
 </body>
 

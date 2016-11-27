@@ -63,6 +63,9 @@ function navAnimation(selection) {
 }
 
 $(function() {
+  $('.tooltip').tooltipster({
+    theme: 'tooltipster-light'
+  });
   createNav();
   navAnimation('#0')
   showDefine();

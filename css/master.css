@@ -48,6 +48,14 @@ footer {
   height: 75px;
 }
 
+.tooltip_templates {
+  display: none;
+}
+
+.tooltip-image {
+  max-width: calc(100vw - 30px);
+}
+
 .pad-right-5 {
   padding-right: 5%;
 }
