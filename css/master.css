@@ -98,8 +98,8 @@ footer {
 .main-content {
   box-sizing: border-box;
   display: flex;
-  padding-left: 5%;
-  flex: 0 0 75%;
+  padding: 0 5% 0 5%;
+  flex: 1 1 100%;
   border-left: 1px solid #8c99a3;
   overflow: auto;
 }
@@ -110,20 +110,24 @@ footer {
 
 .content-wrap {
   display: flex;
+  flex: 1 1 100%;
 }
 
 .projects-wrap {
   display: flex;
+  flex: 1 1 100%;
 }
 
 .projects {
   height: 100%;
+  flex: 1 1 100%;
   overflow: auto;
 }
 
 .project {
-  padding-right: 7%;
-  padding-bottom: 50px;
+  display: flex;
+  justify-content: center;
+  flex: 1 1 100%;
 }
 
 .project-title {
@@ -193,6 +197,29 @@ footer {
   cursor: pointer;
 }
 
+.card {
+  margin: 1em;
+  max-width: 800px;
+  -webkit-box-orient: vertical;
+}
+
+.card-img-top {
+  max-width: 800px;
+}
+
+.card-block {
+  padding: 2em;
+}
+
+.card-title {
+  margin: 0;
+  color: #01213b;
+  font-size: 1.4em;
+}
+
+.card-actions {
+  margin-right: 25px;
+}
 
 /*** scroll bar ***/
 
@@ -235,7 +262,7 @@ footer {
     margin-bottom: 0;
   }
   .main-content {
-    padding: 0 0 0 5%;
+    /*padding: 0 0 0 5%;*/
     flex: 0 0 calc(100vh - 150px);
     border-left: none;
   }
@@ -243,8 +270,5 @@ footer {
   }
   .projects-wrap {
     margin-top: 5%;
-  }
-  .project {
-    padding-right: 5%;
   }
 }

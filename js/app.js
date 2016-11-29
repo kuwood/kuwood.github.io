@@ -1,22 +1,22 @@
 function showDefine() {
   $('.main-content .content-wrap').children().hide();
   $('.define').fadeIn();
-  $('.content-wrap').css({
-    "display": "flex"
-  });
+  // $('.content-wrap').css({
+  //   "display": "flex"
+  // });
   $('.main-content').css({
-    'padding-right': '5%'
+    'padding': '0 5% 0 5%'
   })
 }
 
 function showProjects() {
   $('.main-content .content-wrap').children().hide();
-  $('.content-wrap').css({
-    "display": "flex"
-  });
+  // $('.content-wrap').css({
+  //   "display": "flex"
+  // });
   $('.projects-wrap').fadeIn();
   $('.main-content').css({
-    'padding-right': '0'
+    'padding': '0'
   })
 }
 
