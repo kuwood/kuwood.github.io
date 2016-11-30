@@ -136,18 +136,12 @@ footer {
   text-align: center;
 }
 
+.project-tech {
+  margin-top: 19.200px;
+}
+
 .project img {
   width: 100%;
-}
-
-.project-links {
-  display: flex;
-  align-items: center;
-}
-
-.project-links a {
-  flex: 1 0 auto;
-  text-align: center;
 }
 
 .contact {
@@ -201,6 +195,7 @@ footer {
   margin: 1em;
   max-width: 800px;
   -webkit-box-orient: vertical;
+  border-bottom: 1px solid #eee;
 }
 
 .card-img-top {
@@ -214,11 +209,20 @@ footer {
 .card-title {
   margin: 0;
   color: #01213b;
-  font-size: 1.4em;
+  font-size: 1.6em;
+}
+
+.card-footer {
+  display: flex;
 }
 
 .card-actions {
   margin-right: 25px;
+}
+
+.tech-icon {
+  color: #01213b;
+  font-size: 1.5em;
 }
 
 /*** scroll bar ***/
@@ -262,7 +266,6 @@ footer {
     margin-bottom: 0;
   }
   .main-content {
-    /*padding: 0 0 0 5%;*/
     flex: 0 0 calc(100vh - 150px);
     border-left: none;
   }
