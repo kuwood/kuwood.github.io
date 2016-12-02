@@ -14,11 +14,11 @@ ul, li {
 }
 
 p {
-  min-height: 100px;
   align-self: center;
   color: #01213b;
   font-size: 1.2em;
-  font-family: 'Fanwood Text', serif;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
 }
 
 a {
@@ -192,10 +192,9 @@ footer {
 }
 
 .card {
-  margin: 1em;
+  margin: 1em 1em 4em 1em;
   max-width: 800px;
   -webkit-box-orient: vertical;
-  border-bottom: 1px solid #eee;
 }
 
 .card-img-top {
@@ -210,6 +209,7 @@ footer {
   margin: 0;
   color: #01213b;
   font-size: 1.6em;
+  font-family: 'Quattrocento', serif;
 }
 
 .card-footer {
@@ -221,8 +221,12 @@ footer {
 }
 
 .tech-icon {
-  color: #01213b;
+  color: #4b4b4b;
   font-size: 1.5em;
+}
+
+#project-4 > .card {
+  margin-bottom: 0;
 }
 
 /*** scroll bar ***/
