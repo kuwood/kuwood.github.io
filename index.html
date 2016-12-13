@@ -3,14 +3,12 @@
 
 <head>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.min.css" media="screen" title="no title" charset="utf-8">
-  <link rel="stylesheet" href="css/master.css" media="screen" title="no title" charset="utf-8">
-  <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
-  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Quattrocento' type='text/css'>
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400|Quattrocento" rel="stylesheet">
   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/master/devicon.min.css">
   <link rel="stylesheet" type="text/css" href="css/tooltipster.bundle.min.css" />
-  <link rel="stylesheet" href="css/font-awesome-animation.min.css">
   <link rel="stylesheet" type="text/css" href="css/plugins/tooltipster/sideTip/themes/tooltipster-sideTip-light.min.css" />
+  <link rel="stylesheet" href="css/master.css" media="screen" title="no title" charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta charset="utf-8">
   <title>Keith Underwood</title>
@@ -29,12 +27,33 @@
       </div>
       <div class="main-content">
         <div class="content-wrap">
-          <p class="define">I am <strong class="tooltip" data-tooltip-content="#webdev">Web Developer</strong> who is currently based in the San Francisco Bay Area. My interests include technology, music, sports, games, outdoors, beer and discovering new things. I pride myself in <strong class="tooltip" data-tooltip-content="#discipline">self-discipline</strong>            and my thirst for <strong class="tooltip" data-tooltip-content="#efficient">efficiency</strong>. I also love <strong class="tooltip" data-tooltip-content="#adventure">sharing experiences</strong>, laughs, and smiles. Feel free to contact me using one of the links below.</p>
+          <div id="define" class="flex-col">
+            <p class="define">I am <span class="tooltip bold" data-tooltip-content="#webdev">Web Developer</span> who is currently based in the San Francisco Bay Area. My interests include technology, music, sports, games, outdoors, beer and discovering new things. I pride myself in <span class="tooltip bold" data-tooltip-content="#discipline">self-discipline</span>            and my thirst for <span class="tooltip bold" data-tooltip-content="#efficient">efficiency</span>. I also love <span class="tooltip bold" data-tooltip-content="#adventure">sharing experiences</span>, laughs, and smiles. Feel free to contact me using one of the links below.</p>
+            <div class="home-links">
+              <a href="mailto:kunderwood510@gmail.com" target="_blank"><button type="button" class="btn-dark">Email me</button></a>
+              <button id="projects-button" type="button" class="btn-light">View projects</button>
+            </div>
+          </div>
+          <div id="about" class="flex-col">
+            <p class="define marg-lr-1em">It seems that ever since i assembled my first computer at the age of twelve most on my entertainment has stemmed from the internet. I have always looked for the coolest tools or websites online and once a friend recommended I look into becoming a web developer I became hooked. Now instead of searching for tools and websites, I build them.</p>
+            <p class="define marg-lr-1em">Currently I am looking for work and can be found by using the following social links</p>
+            <ul class="social marg-lr-1em">
+              <li><a class="social-links" href="https://github.com/kuwood" target="_blank"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a></li>
+              <li><a class="social-links" href="https://www.linkedin.com/in/krunderwood" target="_blank"><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i></a></li>
+              <li><a class="social-links" href="https://twitter.com/kuwoodsays" target="_blank"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a></li>
+              <li><a class="social-links" href="mailto:kunderwood510@gmail.com" target="_blank"><i class="fa fa-envelope fa-2x" aria-hidden="true"></i></a></li>
+            </ul>
+          </div>
           <div class="projects-wrap">
             <div class="projects">
               <div id="project-1" class="project">
                 <div class="card">
-                  <img class="card-img-top" src="img/lets_sync.png" alt="lets_sync.png">
+                  <div class="img-container">
+                    <a href="http://lets-sync-up.herokuapp.com" target="_blank">
+                      <img class="card-img-top" src="img/lets_sync.png" alt="lets_sync.png">
+                      <span class="view-project-hover">View project</span>
+                    </a>
+                  </div>
                   <div class="card-block">
                     <h4 class="card-title">Lets Sync Up</h4>
                     <div class="project-tech">
@@ -48,10 +67,10 @@
                     <div class="card-footer">
                       <div class="project-links">
                         <a class="card-actions" href="https://github.com/kuwood/sync-up" target="_blank">
-                          <i class="social-links fa fa-github-alt fa-2x faa-float animated faa-slow" aria-hidden="true"></i>
+                          <button type="button" class="btn-light marg-clear-l">View code</button>
                         </a>
                         <a href="http://lets-sync-up.herokuapp.com" target="_blank">
-                          <i class="social-links fa fa-eye fa-2x faa-ring animated faa-slow" aria-hidden="true"></i>
+                          <button type="button" class="btn-dark">View project</button>
                         </a>
                       </div>
                     </div>
@@ -60,7 +79,12 @@
               </div>
               <div id="project-2" class="project">
                 <div class="card">
-                  <img class="card-img-top" src="img/bike_homepage.png" alt="bike_homepage.png">
+                  <div class="img-container">
+                    <a href="http://keithunderwood.com/fair-weather-cyclist/" target="_blank">
+                      <img class="card-img-top" src="img/bike_homepage.png" alt="bike_homepage.png">
+                      <span class="view-project-hover">View project</span>
+                    </a>
+                  </div>
                   <div class="card-block">
                     <h4 class="card-title">Fair Weather Cyclist</h4>
                     <div class="project-tech">
@@ -72,10 +96,10 @@
                     <div class="card-footer">
                       <div class="project-links">
                         <a class="card-actions" href="https://github.com/kuwood/fair-weather-cyclist" target="_blank">
-                          <i class="social-links fa fa-github-alt fa-2x faa-float animated faa-slow" aria-hidden="true"></i>
+                          <button type="button" class="btn-light marg-clear-l">View code</button>
                         </a>
                         <a href="http://keithunderwood.com/fair-weather-cyclist/" target="_blank">
-                          <i class="social-links fa fa-eye fa-2x faa-ring animated faa-slow" aria-hidden="true"></i>
+                          <button type="button" class="btn-dark">View project</button>
                         </a>
                       </div>
                     </div>
@@ -84,7 +108,12 @@
               </div>
               <div id="project-3" class="project">
                 <div class="card">
-                  <img class="card-img-top" src="img/rip_clips.jpg" alt="rip_clips.png">
+                  <div class="img-container">
+                    <a href="https://stormy-depths-59077.herokuapp.com/" target="_blank">
+                      <img class="card-img-top" src="img/rip_clips.jpg" alt="rip_clips.png">
+                      <span class="view-project-hover">View project</span>
+                    </a>
+                  </div>
                   <div class="card-block">
                     <h4 class="card-title">RIP Clips</h4>
                     <div class="project-tech">
@@ -92,14 +121,14 @@
                       <i class="devicon-mongodb-plain tech-icon"></i>
                       <i class="devicon-nodejs-plain tech-icon"></i>
                     </div>
-                    <p class="card-text">RIP Clips is a place where you can submit your favorite twitch clips to kepp in a library as well as browse clips others have submitted.</p>
+                    <p class="card-text">RIP Clips is a place where you can submit your favorite twitch clips to keep in a library as well as browse clips others have submitted. When Twitch released their clips feature they had no place to store your clips. I created this project to house your clips before twitch released their implementation.</p>
                     <div class="card-footer">
                       <div class="project-links">
                         <a class="card-actions" href="https://github.com/kuwood/rip-clips" target="_blank">
-                          <i class="social-links fa fa-github-alt fa-2x faa-float animated faa-slow" aria-hidden="true"></i>
+                          <button type="button" class="btn-light marg-clear-l">View code</button>
                         </a>
                         <a href="https://stormy-depths-59077.herokuapp.com/" target="_blank">
-                          <i class="social-links fa fa-eye fa-2x faa-ring animated faa-slow" aria-hidden="true"></i>
+                          <button type="button" class="btn-dark">View project</button>
                         </a>
                       </div>
                     </div>
@@ -108,7 +137,12 @@
               </div>
               <div id="project-4" class="project">
                 <div class="card">
-                  <img class="card-img-top" src="img/peepin_twitch.png" alt="peepin_twitch.png">
+                  <div class="img-container">
+                    <a href="http://keithunderwood.com/peepin-twitch" target="_blank">
+                      <img class="card-img-top" src="img/peepin_twitch.png" alt="peepin_twitch.png">
+                      <span class="view-project-hover">View project</span>
+                    </a>
+                  </div>
                   <div class="card-block">
                     <h4 class="card-title">Peepin Twitch</h4>
                     <div class="project-tech">
@@ -121,10 +155,10 @@
                     <div class="card-footer">
                       <div class="project-links">
                         <a class="card-actions" href="https://github.com/kuwood/peepin-twitch" target="_blank">
-                          <i class="social-links fa fa-github-alt fa-2x faa-float animated faa-slow" aria-hidden="true"></i>
+                          <button type="button" class="btn-light marg-clear-l">View code</button>
                         </a>
                         <a href="http://keithunderwood.com/peepin-twitch" target="_blank">
-                          <i class="social-links fa fa-eye fa-2x faa-ring animated faa-slow" aria-hidden="true"></i>
+                          <button type="button" class="btn-dark">View project</button>
                         </a>
                       </div>
                     </div>
@@ -137,12 +171,7 @@
       </div>
     </section>
     <footer>
-      <ul class="social">
-        <li><a class="social-links" href="https://github.com/kuwood" target="_blank"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a></li>
-        <li><a class="social-links" href="https://www.linkedin.com/in/krunderwood" target="_blank"><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i></a></li>
-        <li><a class="social-links" href="https://twitter.com/kuwoodsays" target="_blank"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a></li>
-        <li><a class="social-links" href="mailto:kunderwood510@gmail.com" target="_blank"><i class="fa fa-envelope fa-2x" aria-hidden="true"></i></a></li>
-      </ul>
+      <p>&copy; Keith Underwood 2016</p>
     </footer>
   </div>
   <div class="tooltip_templates">

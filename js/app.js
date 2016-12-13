@@ -1,28 +1,36 @@
 function showDefine() {
   $('.main-content .content-wrap').children().hide();
-  $('.define').fadeIn();
-  // $('.content-wrap').css({
-  //   "display": "flex"
-  // });
+  $('#define').fadeIn();
   $('.main-content').css({
-    'padding': '0 5% 0 5%'
+    'padding': '0 5% 0 5%',
+    'align-items': 'center'
+  })
+  $('#projects-button').click(function() {
+    navAnimation('#1');
+    showProjects();
   })
 }
 
 function showProjects() {
   $('.main-content .content-wrap').children().hide();
-  // $('.content-wrap').css({
-  //   "display": "flex"
-  // });
   $('.projects-wrap').fadeIn();
   $('.main-content').css({
-    'padding': '0'
+    'padding': '0',
+    'align-items': 'center'
+  })
+}
+
+function showAbout() {
+  $('.main-content .content-wrap').children().hide();
+  $('#about').fadeIn();
+  $('.main-content').css({
+    'padding': '0',
   })
 }
 
 // creates li for each nav item
 function createNav() {
-  var content = ["Keith Underwood", "Projects"];
+  var content = ["Keith Underwood", "Projects", "About"];
   content.forEach(function(i) {
     var liItem = $("<li><a id='" + content.indexOf(i) +
       "' class='nav-link'>" + i + "</a></li>");
@@ -36,29 +44,27 @@ function createNav() {
 // animates and handles show/hide of content
 function navRouter(i) {
   if (i.text() === "Keith Underwood") {
-    navAnimation('#0')
+    navAnimation('#0');
     showDefine();
-  } else {
-    navAnimation('#1')
+  } else if (i.text() === "Projects") {
+    navAnimation('#1');
     showProjects();
+  } else {
+    navAnimation('#2');
+    showAbout();
   }
 }
 
 function navAnimation(selection) {
   if (selection === '#0') {
-    $('#0').animate({
-      'font-size': '1.4em'
-    }, 100)
-    $('#1').animate({
-      'font-size': '1.2em'
-    }, 100)
+    $('#0').addClass('nav-link-open')
+    $('#1, #2').removeClass('nav-link-open')
+  } else if (selection === '#1') {
+    $('#1').addClass('nav-link-open')
+    $('#0, #2').removeClass('nav-link-open')
   } else {
-    $('#1').animate({
-      'font-size': '1.4em'
-    }, 100)
-    $('#0').animate({
-      'font-size': '1.2em'
-    }, 100)
+    $('#2').addClass('nav-link-open')
+    $('#0, #1').removeClass('nav-link-open')
   }
 }
 
