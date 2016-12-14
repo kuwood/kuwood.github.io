@@ -24,7 +24,7 @@ function showAbout() {
   $('.main-content .content-wrap').children().hide();
   $('#about').fadeIn();
   $('.main-content').css({
-    'padding': '0',
+    'padding': '0 5% 0 5%'
   })
 }
 
