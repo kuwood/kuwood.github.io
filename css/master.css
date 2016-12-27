@@ -330,7 +330,7 @@ footer p {
 }
 
 @media all and (max-width: 400px) {
-  #about {
+  #about, .projects-wrap {
     display: block;
   }
 }
