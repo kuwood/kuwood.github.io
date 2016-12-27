@@ -25,7 +25,7 @@ function showAbout() {
   $('#about').fadeIn();
   $('.main-content').css({
     'padding': '0',
-  })
+  });
 }
 
 // creates li for each nav item

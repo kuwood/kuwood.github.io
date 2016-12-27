@@ -329,6 +329,12 @@ footer p {
   background-color: #063B67;
 }
 
+@media all and (max-width: 400px) {
+  #about {
+    display: block;
+  }
+}
+
 @media all and (max-width: 50em) {
   header {
     display: none;
