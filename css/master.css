@@ -53,8 +53,8 @@ footer p {
   padding: 0 !important;
 }
 
-.justify-center {
-  justify-content: center !important;
+.align-center {
+  align-items: center !important;
 }
 
 .marg-lr-1em {
@@ -392,7 +392,7 @@ footer p {
 
   .main-content {
     flex: 0 1 100%;
-    justify-content: center;
+    justify-content: flex-start;
     border-left: none;
   }
 
