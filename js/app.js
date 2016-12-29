@@ -1,10 +1,7 @@
 function showDefine() {
   $('.main-content .content-wrap').children().hide();
   $('#define').fadeIn();
-  $('.main-content').css({
-    'padding': '0 5% 0 5%',
-    'align-items': 'center'
-  })
+  $('.main-content').removeClass("clear-padding");
   $('#projects-button').click(function() {
     navAnimation('#1');
     showProjects();
@@ -14,18 +11,14 @@ function showDefine() {
 function showProjects() {
   $('.main-content .content-wrap').children().hide();
   $('.projects-wrap').fadeIn();
-  $('.main-content').css({
-    'padding': '0',
-    'align-items': 'center'
-  })
+  $('.main-content').addClass("clear-padding");
 }
 
 function showAbout() {
   $('.main-content .content-wrap').children().hide();
   $('#about').fadeIn();
-  $('.main-content').css({
-    'padding': '0',
-  });
+  $('.main-content')
+  $('.main-content').addClass("clear-padding");
 }
 
 // creates li for each nav item

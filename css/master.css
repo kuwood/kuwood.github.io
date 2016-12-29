@@ -49,6 +49,10 @@ footer p {
   align-self: center;
 }
 
+.clear-padding {
+  padding: 0 !important;
+}
+
 .marg-lr-1em {
   margin-left: 1em;
   margin-right: 1em;
@@ -335,7 +339,7 @@ footer p {
   }
 }
 
-@media all and (max-width: 50em) {
+@media all and (max-width: 800px) {
   header {
     display: none;
   }
@@ -386,6 +390,7 @@ footer p {
 
   .main-content {
     flex: 0 1 100%;
+    justify-content: flex-start;
     border-left: none;
   }
 
