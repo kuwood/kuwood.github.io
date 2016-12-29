@@ -147,6 +147,10 @@ footer p {
   height: 100%;
 }
 
+#define {
+  justify-content: center;
+}
+
 .projects-wrap {
   display: flex;
   flex: 1 1 100%;
