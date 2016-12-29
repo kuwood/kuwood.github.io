@@ -333,12 +333,6 @@ footer p {
   background-color: #063B67;
 }
 
-@media all and (max-width: 400px) {
-  #about, .projects-wrap {
-    display: block;
-  }
-}
-
 @media all and (max-width: 800px) {
   header {
     display: none;
