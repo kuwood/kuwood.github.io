@@ -19,8 +19,8 @@ function showProjects() {
 function showAbout() {
   $('.main-content .content-wrap').children().hide();
   $('#about').fadeIn();
-  $('.main-content')
-  $('.main-content').addClass("clear-padding align-center");
+  $('.main-content').removeClass("clear-padding");
+  $('.main-content').addClass("align-center");
 }
 
 // creates li for each nav item
