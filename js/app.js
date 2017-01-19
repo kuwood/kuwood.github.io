@@ -52,25 +52,25 @@ function navRouter(i) {
 
 function navAnimation(selection) {
   if (selection === '#0') {
-    $('#0').addClass('nav-link-open')
-    $('#1, #2').removeClass('nav-link-open')
+    $('#0').addClass('nav-link-open');
+    $('#1, #2').removeClass('nav-link-open');
   } else if (selection === '#1') {
-    $('#1').addClass('nav-link-open')
-    $('#0, #2').removeClass('nav-link-open')
+    $('#1').addClass('nav-link-open');
+    $('#0, #2').removeClass('nav-link-open');
   } else {
-    $('#2').addClass('nav-link-open')
-    $('#0, #1').removeClass('nav-link-open')
+    $('#2').addClass('nav-link-open');
+    $('#0, #1').removeClass('nav-link-open');
   }
 }
 
 $(function() {
-  $('.tooltip').tooltipster({
-    theme: 'tooltipster-light'
-  });
   createNav();
-  navAnimation('#0')
+  navAnimation('#0');
   showDefine();
   $('body').fadeIn().css({
     'display': 'block'
-  })
+  });
+  $('.tooltip').tooltipster({
+    theme: 'tooltipster-light'
+  });
 });

@@ -49,6 +49,10 @@ footer p {
   align-self: center;
 }
 
+.hide {
+  display: none;
+}
+
 .clear-padding {
   padding: 0 !important;
 }
