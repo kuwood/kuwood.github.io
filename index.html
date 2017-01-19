@@ -50,7 +50,7 @@
                 <div class="card">
                   <div class="img-container">
                     <a href="http://lets-sync-up.herokuapp.com" target="_blank">
-                      <img class="card-img-top" src="img/lets_sync.png" alt="lets_sync.png">
+                      <img class="card-img-top" src="" data-src="img/lets_sync.png" alt="lets_sync.png">
                       <span class="view-project-hover">View project</span>
                     </a>
                   </div>
@@ -81,7 +81,7 @@
                 <div class="card">
                   <div class="img-container">
                     <a href="http://keithunderwood.com/fair-weather-cyclist/" target="_blank">
-                      <img class="card-img-top" src="img/bike_homepage.png" alt="bike_homepage.png">
+                      <img class="card-img-top" src="" data-src="img/bike_homepage.png" alt="bike_homepage.png">
                       <span class="view-project-hover">View project</span>
                     </a>
                   </div>
@@ -110,7 +110,7 @@
                 <div class="card">
                   <div class="img-container">
                     <a href="https://stormy-depths-59077.herokuapp.com/" target="_blank">
-                      <img class="card-img-top" src="img/rip_clips.png" alt="rip_clips.png">
+                      <img class="card-img-top" src="" data-src="img/rip_clips.png" alt="rip_clips.png">
                       <span class="view-project-hover">View project</span>
                     </a>
                   </div>
@@ -139,7 +139,7 @@
                 <div class="card">
                   <div class="img-container">
                     <a href="http://keithunderwood.com/peepin-twitch" target="_blank">
-                      <img class="card-img-top" src="img/peepin_twitch.png" alt="peepin_twitch.png">
+                      <img class="card-img-top" src="" data-src="img/peepin_twitch.png" alt="peepin_twitch.png">
                       <span class="view-project-hover">View project</span>
                     </a>
                   </div>
@@ -176,21 +176,31 @@
   </div>
   <div class="tooltip_templates">
     <span id="webdev">
-        <img class="tooltip-image" src="img/webdev.gif" />
+        <img class="tooltip-image" src="" data-src="img/webdev.gif"/>
     </span>
     <span id="discipline">
-        <img class="tooltip-image" src="img/discipline.gif" />
+        <img class="tooltip-image" src="" data-src="img/discipline.gif"/>
     </span>
     <span id="efficient">
-        <img class="tooltip-image" src="img/efficient.gif" />
+        <img class="tooltip-image" src="" data-src="img/efficient.gif"/>
     </span>
     <span id="adventure">
-        <img class="tooltip-image" src="img/adventure.gif" />
+        <img class="tooltip-image" src="" data-src="img/adventure.gif"/>
     </span>
   </div>
   <script src="//code.jquery.com/jquery.min.js"></script>
+  <script type="text/javascript" src="js/tooltipster.bundle.min.js"></script>
   <script src="js/app.js"></script>
-  <script async type="text/javascript" src="js/tooltipster.bundle.min.js"></script>
+  <script>
+    window.addEventListener('load', function(){
+        var allimages= document.getElementsByTagName('img');
+        for (var i=0; i<allimages.length; i++) {
+            if (allimages[i].getAttribute('data-src')) {
+                allimages[i].setAttribute('src', allimages[i].getAttribute('data-src'));
+            }
+        }
+    }, false)
+</script>
 </body>
 
 </html>
