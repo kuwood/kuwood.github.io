@@ -65,7 +65,7 @@ function navAnimation(selection) {
 
 $(function() {
   var year = new Date().getFullYear()
-  $('footer p').innerHTML = '&copy; Keith Underwood ' + year
+  document.querySelector('footer p').innerHTML = '&copy; Keith Underwood ' + year
   createNav();
   navAnimation('#0');
   showDefine();
