@@ -72,7 +72,4 @@ $(function() {
   $('body').fadeIn().css({
     'display': 'block'
   });
-  $('.tooltip').tooltipster({
-    theme: 'tooltipster-light'
-  });
 });
